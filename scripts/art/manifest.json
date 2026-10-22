@@ -1,0 +1,1304 @@
+{
+  "version": 1,
+  "source": "Арт-направление проекта: плоская векторная графика в стиле материалов BI Academy",
+  "reference": "art/reference/style-fox.png",
+  "api": {
+    "model": "gpt-image-1",
+    "size": "1024x1536",
+    "quality": "medium",
+    "background": "transparent",
+    "output_format": "png",
+    "n": 1
+  },
+  "estimatedUsdPerImage": 0.065,
+  "styleTemplate": "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe{BADGE}. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+  "badge": " and a small white round badge with dark blue letters BI",
+  "recolorTemplate": "Change ONLY the color of the hard hat to {COLOR_NAME} ({HEX}) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground.",
+  "animals": {
+    "critical": "a cute owl construction specialist: round body with flat beige-brown feathers, big round amber eyes, small orange beak, small feather tufts poking out from under the hard hat, wings used as hands, small round thin glasses.",
+    "confidence": "a cute brown bear construction specialist: round ears poking out from under the hard hat, cream muzzle, sturdy round build.",
+    "discipline": "a cute beaver construction specialist: flat brown fur color, cream muzzle, two small white front teeth, flat dark-brown beaver tail behind.",
+    "engagement": "a cute grey wolf construction specialist: pointed ears poking out from under the hard hat, light grey muzzle, fluffy grey tail behind."
+  },
+  "roles": {
+    "critical": "Wears a short purple-to-blue gradient cape like the reference character, holds a rolled blueprint under one arm, the other hand raised with the index finger up as if sharing an idea.",
+    "confidence": "Holds a walkie-talkie raised in one hand, the other hand on hip, confident stance, an orange armband on the sleeve. No cape.",
+    "discipline": "Holds a large yellow tape measure in one hand with a long piece of measuring tape pulled out, a small hammer hangs on the tool belt, calm confident pose with the other hand on hip. No cape.",
+    "engagement": "Holds an open notebook with a pen, the other hand open in a friendly explaining gesture, warm smile. No cape."
+  },
+  "helmets": [
+    {
+      "id": "orange",
+      "name": "bright orange",
+      "hex": "#F28C28",
+      "label": "Оранжевая"
+    },
+    {
+      "id": "white",
+      "name": "opaque light grey-white",
+      "hex": "#ECEFF3",
+      "label": "Белая"
+    },
+    {
+      "id": "blue",
+      "name": "medium blue",
+      "hex": "#1668B8",
+      "label": "Синяя"
+    },
+    {
+      "id": "yellow",
+      "name": "sunny yellow",
+      "hex": "#F2C230",
+      "label": "Жёлтая"
+    },
+    {
+      "id": "red",
+      "name": "signal red",
+      "hex": "#D94A3A",
+      "label": "Красная"
+    },
+    {
+      "id": "green",
+      "name": "green",
+      "hex": "#2E9E5B",
+      "label": "Зелёная"
+    }
+  ],
+  "images": [
+    {
+      "id": "critical-confidence-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute owl construction specialist: round body with flat beige-brown feathers, big round amber eyes, small orange beak, small feather tufts poking out from under the hard hat, wings used as hands, small round thin glasses. Holds a walkie-talkie raised in one hand, the other hand on hip, confident stance, an orange armband on the sleeve. No cape.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/critical-confidence-orange.png",
+      "path": "public/art/archetypes/critical-confidence/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "critical-confidence"
+    },
+    {
+      "id": "critical-discipline-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute owl construction specialist: round body with flat beige-brown feathers, big round amber eyes, small orange beak, small feather tufts poking out from under the hard hat, wings used as hands, small round thin glasses. Holds a large yellow tape measure in one hand with a long piece of measuring tape pulled out, a small hammer hangs on the tool belt, calm confident pose with the other hand on hip. No cape.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/critical-discipline-orange.png",
+      "path": "public/art/archetypes/critical-discipline/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "critical-discipline"
+    },
+    {
+      "id": "critical-engagement-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute owl construction specialist: round body with flat beige-brown feathers, big round amber eyes, small orange beak, small feather tufts poking out from under the hard hat, wings used as hands, small round thin glasses. Holds an open notebook with a pen, the other hand open in a friendly explaining gesture, warm smile. No cape.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/critical-engagement-orange.png",
+      "path": "public/art/archetypes/critical-engagement/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "critical-engagement"
+    },
+    {
+      "id": "confidence-critical-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute brown bear construction specialist: round ears poking out from under the hard hat, cream muzzle, sturdy round build. Wears a short purple-to-blue gradient cape like the reference character, holds a rolled blueprint under one arm, the other hand raised with the index finger up as if sharing an idea.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/confidence-critical-orange.png",
+      "path": "public/art/archetypes/confidence-critical/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "confidence-critical"
+    },
+    {
+      "id": "confidence-discipline-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute brown bear construction specialist: round ears poking out from under the hard hat, cream muzzle, sturdy round build. Holds a large yellow tape measure in one hand with a long piece of measuring tape pulled out, a small hammer hangs on the tool belt, calm confident pose with the other hand on hip. No cape.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/confidence-discipline-orange.png",
+      "path": "public/art/archetypes/confidence-discipline/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "confidence-discipline"
+    },
+    {
+      "id": "confidence-engagement-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute brown bear construction specialist: round ears poking out from under the hard hat, cream muzzle, sturdy round build. Holds an open notebook with a pen, the other hand open in a friendly explaining gesture, warm smile. No cape.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/confidence-engagement-orange.png",
+      "path": "public/art/archetypes/confidence-engagement/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "confidence-engagement"
+    },
+    {
+      "id": "discipline-critical-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute beaver construction specialist: flat brown fur color, cream muzzle, two small white front teeth, flat dark-brown beaver tail behind. Wears a short purple-to-blue gradient cape like the reference character, holds a rolled blueprint under one arm, the other hand raised with the index finger up as if sharing an idea.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/discipline-critical-orange.png",
+      "path": "public/art/archetypes/discipline-critical/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "discipline-critical"
+    },
+    {
+      "id": "discipline-confidence-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute beaver construction specialist: flat brown fur color, cream muzzle, two small white front teeth, flat dark-brown beaver tail behind. Holds a walkie-talkie raised in one hand, the other hand on hip, confident stance, an orange armband on the sleeve. No cape.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/discipline-confidence-orange.png",
+      "path": "public/art/archetypes/discipline-confidence/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "discipline-confidence"
+    },
+    {
+      "id": "discipline-engagement-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute beaver construction specialist: flat brown fur color, cream muzzle, two small white front teeth, flat dark-brown beaver tail behind. Holds an open notebook with a pen, the other hand open in a friendly explaining gesture, warm smile. No cape.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/discipline-engagement-orange.png",
+      "path": "public/art/archetypes/discipline-engagement/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "discipline-engagement"
+    },
+    {
+      "id": "engagement-critical-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute grey wolf construction specialist: pointed ears poking out from under the hard hat, light grey muzzle, fluffy grey tail behind. Wears a short purple-to-blue gradient cape like the reference character, holds a rolled blueprint under one arm, the other hand raised with the index finger up as if sharing an idea.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/engagement-critical-orange.png",
+      "path": "public/art/archetypes/engagement-critical/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "engagement-critical"
+    },
+    {
+      "id": "engagement-confidence-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute grey wolf construction specialist: pointed ears poking out from under the hard hat, light grey muzzle, fluffy grey tail behind. Holds a walkie-talkie raised in one hand, the other hand on hip, confident stance, an orange armband on the sleeve. No cape.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/engagement-confidence-orange.png",
+      "path": "public/art/archetypes/engagement-confidence/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "engagement-confidence"
+    },
+    {
+      "id": "engagement-discipline-orange",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a cute grey wolf construction specialist: pointed ears poking out from under the hard hat, light grey muzzle, fluffy grey tail behind. Holds a large yellow tape measure in one hand with a long piece of measuring tape pulled out, a small hammer hangs on the tool belt, calm confident pose with the other hand on hip. No cape.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/engagement-discipline-orange.png",
+      "path": "public/art/archetypes/engagement-discipline/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "engagement-discipline"
+    },
+    {
+      "id": "mystery-orange",
+      "type": "mystery",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a faceless construction worker mascot. The hard hat has the same small white round badge with dark blue letters BI as all other characters — NOT a question mark on the hat. The face is a smooth solid dark slate-blue oval (#4F657D) with one large bold pure-white (#FFFFFF) question mark in the center of the face; no eyes, no mouth, no blush. Same chibi body. Arms relaxed along the body. No props, no cape.",
+        "Hard hat color: bright orange (#F28C28)."
+      ],
+      "base": null,
+      "rawPath": "art/raw/mystery-orange.png",
+      "path": "public/art/hero/mystery-orange.webp",
+      "helmet": "orange"
+    },
+    {
+      "id": "npc-boss",
+      "type": "npc",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a Kazakh man around 45, construction site manager, short dark hair, neat short beard, friendly but serious expression, opaque light grey-white hard hat (#ECEFF3) with a slightly darker grey rim; on its front a clearly visible small round badge with a thin navy border and dark blue letters BI; navy work jacket under the vest, holds a clipboard."
+      ],
+      "base": null,
+      "rawPath": "art/raw/npc-boss.png",
+      "path": "public/art/npc/boss.webp",
+      "helmet": "white"
+    },
+    {
+      "id": "npc-foreman",
+      "type": "npc",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a Russian man around 50, concrete crew foreman, short grey hair, kind wrinkles, orange hard hat, holds a concrete trowel."
+      ],
+      "base": null,
+      "rawPath": "art/raw/npc-foreman.png",
+      "path": "public/art/npc/foreman.webp",
+      "helmet": "orange"
+    },
+    {
+      "id": "npc-surveyor",
+      "type": "npc",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a Kazakh woman around 30, land surveyor, dark hair in a low bun, blue hard hat, holds a short surveying prism pole."
+      ],
+      "base": null,
+      "rawPath": "art/raw/npc-surveyor.png",
+      "path": "public/art/npc/surveyor.webp",
+      "helmet": "blue"
+    },
+    {
+      "id": "npc-storekeeper",
+      "type": "npc",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a Kazakh man around 35, warehouse keeper, round face, yellow hard hat, holds a clipboard and a small cardboard box."
+      ],
+      "base": null,
+      "rawPath": "art/raw/npc-storekeeper.png",
+      "path": "public/art/npc/storekeeper.webp",
+      "helmet": "yellow"
+    },
+    {
+      "id": "npc-electric",
+      "type": "npc",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a Kazakh man around 30, contractor electrician crew leader, yellow hard hat, holds a coil of orange cable."
+      ],
+      "base": null,
+      "rawPath": "art/raw/npc-electric.png",
+      "path": "public/art/npc/electric.webp",
+      "helmet": "yellow"
+    },
+    {
+      "id": "npc-finisher",
+      "type": "npc",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a man around 40, finishing crew foreman, light stubble, orange hard hat, holds a paint roller, a few white plaster spots on the trousers."
+      ],
+      "base": null,
+      "rawPath": "art/raw/npc-finisher.png",
+      "path": "public/art/npc/finisher.webp",
+      "helmet": "orange"
+    },
+    {
+      "id": "npc-pm",
+      "type": "npc",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a Kazakh man around 50, project director, short neat grey hair, glasses, opaque light grey-white hard hat (#ECEFF3) with a slightly darker grey rim, fully solid and not see-through; on its front a small round badge with a thin navy border and dark blue letters BI; dark blue blazer under the vest, holds a tablet."
+      ],
+      "base": null,
+      "rawPath": "art/raw/npc-pm.png",
+      "path": "public/art/npc/pm.webp",
+      "helmet": "white"
+    },
+    {
+      "id": "npc-pto",
+      "type": "npc",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a Kazakh woman around 28, technical documentation engineer, shoulder-length dark hair, blue hard hat, holds a blue document folder."
+      ],
+      "base": null,
+      "rawPath": "art/raw/npc-pto.png",
+      "path": "public/art/npc/pto.webp",
+      "helmet": "blue"
+    },
+    {
+      "id": "npc-mentor",
+      "type": "npc",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a Kazakh woman around 40, BI Academy mentor, dark hair in a neat bob, blue hard hat, warm smile, holds an open notebook. No cape, no cloak."
+      ],
+      "base": null,
+      "rawPath": "art/raw/npc-mentor.png",
+      "path": "public/art/npc/mentor.webp",
+      "helmet": "blue"
+    },
+    {
+      "id": "npc-installer",
+      "type": "npc",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: a man around 25, contractor installer, yellow hard hat, full-body safety harness with a lanyard and a carabiner."
+      ],
+      "base": null,
+      "rawPath": "art/raw/npc-installer.png",
+      "path": "public/art/npc/installer.webp",
+      "helmet": "yellow"
+    },
+    {
+      "id": "critical-confidence-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-confidence-orange",
+      "rawPath": "art/local/critical-confidence-white.png",
+      "path": "public/art/archetypes/critical-confidence/white.webp",
+      "helmet": "white",
+      "archetypeKey": "critical-confidence"
+    },
+    {
+      "id": "critical-confidence-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-confidence-orange",
+      "rawPath": "art/local/critical-confidence-blue.png",
+      "path": "public/art/archetypes/critical-confidence/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "critical-confidence"
+    },
+    {
+      "id": "critical-confidence-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-confidence-orange",
+      "rawPath": "art/local/critical-confidence-yellow.png",
+      "path": "public/art/archetypes/critical-confidence/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "critical-confidence"
+    },
+    {
+      "id": "critical-confidence-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-confidence-orange",
+      "rawPath": "art/local/critical-confidence-red.png",
+      "path": "public/art/archetypes/critical-confidence/red.webp",
+      "helmet": "red",
+      "archetypeKey": "critical-confidence"
+    },
+    {
+      "id": "critical-confidence-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-confidence-orange",
+      "rawPath": "art/local/critical-confidence-green.png",
+      "path": "public/art/archetypes/critical-confidence/green.webp",
+      "helmet": "green",
+      "archetypeKey": "critical-confidence"
+    },
+    {
+      "id": "critical-discipline-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-discipline-orange",
+      "rawPath": "art/local/critical-discipline-white.png",
+      "path": "public/art/archetypes/critical-discipline/white.webp",
+      "helmet": "white",
+      "archetypeKey": "critical-discipline"
+    },
+    {
+      "id": "critical-discipline-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-discipline-orange",
+      "rawPath": "art/local/critical-discipline-blue.png",
+      "path": "public/art/archetypes/critical-discipline/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "critical-discipline"
+    },
+    {
+      "id": "critical-discipline-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-discipline-orange",
+      "rawPath": "art/local/critical-discipline-yellow.png",
+      "path": "public/art/archetypes/critical-discipline/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "critical-discipline"
+    },
+    {
+      "id": "critical-discipline-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-discipline-orange",
+      "rawPath": "art/local/critical-discipline-red.png",
+      "path": "public/art/archetypes/critical-discipline/red.webp",
+      "helmet": "red",
+      "archetypeKey": "critical-discipline"
+    },
+    {
+      "id": "critical-discipline-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-discipline-orange",
+      "rawPath": "art/local/critical-discipline-green.png",
+      "path": "public/art/archetypes/critical-discipline/green.webp",
+      "helmet": "green",
+      "archetypeKey": "critical-discipline"
+    },
+    {
+      "id": "critical-engagement-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-engagement-orange",
+      "rawPath": "art/local/critical-engagement-white.png",
+      "path": "public/art/archetypes/critical-engagement/white.webp",
+      "helmet": "white",
+      "archetypeKey": "critical-engagement"
+    },
+    {
+      "id": "critical-engagement-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-engagement-orange",
+      "rawPath": "art/local/critical-engagement-blue.png",
+      "path": "public/art/archetypes/critical-engagement/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "critical-engagement"
+    },
+    {
+      "id": "critical-engagement-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-engagement-orange",
+      "rawPath": "art/local/critical-engagement-yellow.png",
+      "path": "public/art/archetypes/critical-engagement/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "critical-engagement"
+    },
+    {
+      "id": "critical-engagement-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-engagement-orange",
+      "rawPath": "art/local/critical-engagement-red.png",
+      "path": "public/art/archetypes/critical-engagement/red.webp",
+      "helmet": "red",
+      "archetypeKey": "critical-engagement"
+    },
+    {
+      "id": "critical-engagement-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "critical-engagement-orange",
+      "rawPath": "art/local/critical-engagement-green.png",
+      "path": "public/art/archetypes/critical-engagement/green.webp",
+      "helmet": "green",
+      "archetypeKey": "critical-engagement"
+    },
+    {
+      "id": "confidence-critical-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-critical-orange",
+      "rawPath": "art/local/confidence-critical-white.png",
+      "path": "public/art/archetypes/confidence-critical/white.webp",
+      "helmet": "white",
+      "archetypeKey": "confidence-critical"
+    },
+    {
+      "id": "confidence-critical-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-critical-orange",
+      "rawPath": "art/local/confidence-critical-blue.png",
+      "path": "public/art/archetypes/confidence-critical/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "confidence-critical"
+    },
+    {
+      "id": "confidence-critical-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-critical-orange",
+      "rawPath": "art/local/confidence-critical-yellow.png",
+      "path": "public/art/archetypes/confidence-critical/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "confidence-critical"
+    },
+    {
+      "id": "confidence-critical-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-critical-orange",
+      "rawPath": "art/local/confidence-critical-red.png",
+      "path": "public/art/archetypes/confidence-critical/red.webp",
+      "helmet": "red",
+      "archetypeKey": "confidence-critical"
+    },
+    {
+      "id": "confidence-critical-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-critical-orange",
+      "rawPath": "art/local/confidence-critical-green.png",
+      "path": "public/art/archetypes/confidence-critical/green.webp",
+      "helmet": "green",
+      "archetypeKey": "confidence-critical"
+    },
+    {
+      "id": "confidence-discipline-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-discipline-orange",
+      "rawPath": "art/local/confidence-discipline-white.png",
+      "path": "public/art/archetypes/confidence-discipline/white.webp",
+      "helmet": "white",
+      "archetypeKey": "confidence-discipline"
+    },
+    {
+      "id": "confidence-discipline-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-discipline-orange",
+      "rawPath": "art/local/confidence-discipline-blue.png",
+      "path": "public/art/archetypes/confidence-discipline/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "confidence-discipline"
+    },
+    {
+      "id": "confidence-discipline-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-discipline-orange",
+      "rawPath": "art/local/confidence-discipline-yellow.png",
+      "path": "public/art/archetypes/confidence-discipline/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "confidence-discipline"
+    },
+    {
+      "id": "confidence-discipline-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-discipline-orange",
+      "rawPath": "art/local/confidence-discipline-red.png",
+      "path": "public/art/archetypes/confidence-discipline/red.webp",
+      "helmet": "red",
+      "archetypeKey": "confidence-discipline"
+    },
+    {
+      "id": "confidence-discipline-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-discipline-orange",
+      "rawPath": "art/local/confidence-discipline-green.png",
+      "path": "public/art/archetypes/confidence-discipline/green.webp",
+      "helmet": "green",
+      "archetypeKey": "confidence-discipline"
+    },
+    {
+      "id": "confidence-engagement-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-engagement-orange",
+      "rawPath": "art/local/confidence-engagement-white.png",
+      "path": "public/art/archetypes/confidence-engagement/white.webp",
+      "helmet": "white",
+      "archetypeKey": "confidence-engagement"
+    },
+    {
+      "id": "confidence-engagement-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-engagement-orange",
+      "rawPath": "art/local/confidence-engagement-blue.png",
+      "path": "public/art/archetypes/confidence-engagement/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "confidence-engagement"
+    },
+    {
+      "id": "confidence-engagement-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-engagement-orange",
+      "rawPath": "art/local/confidence-engagement-yellow.png",
+      "path": "public/art/archetypes/confidence-engagement/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "confidence-engagement"
+    },
+    {
+      "id": "confidence-engagement-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-engagement-orange",
+      "rawPath": "art/local/confidence-engagement-red.png",
+      "path": "public/art/archetypes/confidence-engagement/red.webp",
+      "helmet": "red",
+      "archetypeKey": "confidence-engagement"
+    },
+    {
+      "id": "confidence-engagement-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "confidence-engagement-orange",
+      "rawPath": "art/local/confidence-engagement-green.png",
+      "path": "public/art/archetypes/confidence-engagement/green.webp",
+      "helmet": "green",
+      "archetypeKey": "confidence-engagement"
+    },
+    {
+      "id": "discipline-critical-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-critical-orange",
+      "rawPath": "art/local/discipline-critical-white.png",
+      "path": "public/art/archetypes/discipline-critical/white.webp",
+      "helmet": "white",
+      "archetypeKey": "discipline-critical"
+    },
+    {
+      "id": "discipline-critical-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-critical-orange",
+      "rawPath": "art/local/discipline-critical-blue.png",
+      "path": "public/art/archetypes/discipline-critical/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "discipline-critical"
+    },
+    {
+      "id": "discipline-critical-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-critical-orange",
+      "rawPath": "art/local/discipline-critical-yellow.png",
+      "path": "public/art/archetypes/discipline-critical/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "discipline-critical"
+    },
+    {
+      "id": "discipline-critical-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-critical-orange",
+      "rawPath": "art/local/discipline-critical-red.png",
+      "path": "public/art/archetypes/discipline-critical/red.webp",
+      "helmet": "red",
+      "archetypeKey": "discipline-critical"
+    },
+    {
+      "id": "discipline-critical-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-critical-orange",
+      "rawPath": "art/local/discipline-critical-green.png",
+      "path": "public/art/archetypes/discipline-critical/green.webp",
+      "helmet": "green",
+      "archetypeKey": "discipline-critical"
+    },
+    {
+      "id": "discipline-confidence-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-confidence-orange",
+      "rawPath": "art/local/discipline-confidence-white.png",
+      "path": "public/art/archetypes/discipline-confidence/white.webp",
+      "helmet": "white",
+      "archetypeKey": "discipline-confidence"
+    },
+    {
+      "id": "discipline-confidence-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-confidence-orange",
+      "rawPath": "art/local/discipline-confidence-blue.png",
+      "path": "public/art/archetypes/discipline-confidence/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "discipline-confidence"
+    },
+    {
+      "id": "discipline-confidence-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-confidence-orange",
+      "rawPath": "art/local/discipline-confidence-yellow.png",
+      "path": "public/art/archetypes/discipline-confidence/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "discipline-confidence"
+    },
+    {
+      "id": "discipline-confidence-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-confidence-orange",
+      "rawPath": "art/local/discipline-confidence-red.png",
+      "path": "public/art/archetypes/discipline-confidence/red.webp",
+      "helmet": "red",
+      "archetypeKey": "discipline-confidence"
+    },
+    {
+      "id": "discipline-confidence-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-confidence-orange",
+      "rawPath": "art/local/discipline-confidence-green.png",
+      "path": "public/art/archetypes/discipline-confidence/green.webp",
+      "helmet": "green",
+      "archetypeKey": "discipline-confidence"
+    },
+    {
+      "id": "discipline-engagement-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-engagement-orange",
+      "rawPath": "art/local/discipline-engagement-white.png",
+      "path": "public/art/archetypes/discipline-engagement/white.webp",
+      "helmet": "white",
+      "archetypeKey": "discipline-engagement"
+    },
+    {
+      "id": "discipline-engagement-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-engagement-orange",
+      "rawPath": "art/local/discipline-engagement-blue.png",
+      "path": "public/art/archetypes/discipline-engagement/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "discipline-engagement"
+    },
+    {
+      "id": "discipline-engagement-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-engagement-orange",
+      "rawPath": "art/local/discipline-engagement-yellow.png",
+      "path": "public/art/archetypes/discipline-engagement/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "discipline-engagement"
+    },
+    {
+      "id": "discipline-engagement-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-engagement-orange",
+      "rawPath": "art/local/discipline-engagement-red.png",
+      "path": "public/art/archetypes/discipline-engagement/red.webp",
+      "helmet": "red",
+      "archetypeKey": "discipline-engagement"
+    },
+    {
+      "id": "discipline-engagement-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "discipline-engagement-orange",
+      "rawPath": "art/local/discipline-engagement-green.png",
+      "path": "public/art/archetypes/discipline-engagement/green.webp",
+      "helmet": "green",
+      "archetypeKey": "discipline-engagement"
+    },
+    {
+      "id": "engagement-critical-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-critical-orange",
+      "rawPath": "art/local/engagement-critical-white.png",
+      "path": "public/art/archetypes/engagement-critical/white.webp",
+      "helmet": "white",
+      "archetypeKey": "engagement-critical"
+    },
+    {
+      "id": "engagement-critical-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-critical-orange",
+      "rawPath": "art/local/engagement-critical-blue.png",
+      "path": "public/art/archetypes/engagement-critical/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "engagement-critical"
+    },
+    {
+      "id": "engagement-critical-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-critical-orange",
+      "rawPath": "art/local/engagement-critical-yellow.png",
+      "path": "public/art/archetypes/engagement-critical/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "engagement-critical"
+    },
+    {
+      "id": "engagement-critical-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-critical-orange",
+      "rawPath": "art/local/engagement-critical-red.png",
+      "path": "public/art/archetypes/engagement-critical/red.webp",
+      "helmet": "red",
+      "archetypeKey": "engagement-critical"
+    },
+    {
+      "id": "engagement-critical-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-critical-orange",
+      "rawPath": "art/local/engagement-critical-green.png",
+      "path": "public/art/archetypes/engagement-critical/green.webp",
+      "helmet": "green",
+      "archetypeKey": "engagement-critical"
+    },
+    {
+      "id": "engagement-confidence-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-confidence-orange",
+      "rawPath": "art/local/engagement-confidence-white.png",
+      "path": "public/art/archetypes/engagement-confidence/white.webp",
+      "helmet": "white",
+      "archetypeKey": "engagement-confidence"
+    },
+    {
+      "id": "engagement-confidence-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-confidence-orange",
+      "rawPath": "art/local/engagement-confidence-blue.png",
+      "path": "public/art/archetypes/engagement-confidence/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "engagement-confidence"
+    },
+    {
+      "id": "engagement-confidence-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-confidence-orange",
+      "rawPath": "art/local/engagement-confidence-yellow.png",
+      "path": "public/art/archetypes/engagement-confidence/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "engagement-confidence"
+    },
+    {
+      "id": "engagement-confidence-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-confidence-orange",
+      "rawPath": "art/local/engagement-confidence-red.png",
+      "path": "public/art/archetypes/engagement-confidence/red.webp",
+      "helmet": "red",
+      "archetypeKey": "engagement-confidence"
+    },
+    {
+      "id": "engagement-confidence-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-confidence-orange",
+      "rawPath": "art/local/engagement-confidence-green.png",
+      "path": "public/art/archetypes/engagement-confidence/green.webp",
+      "helmet": "green",
+      "archetypeKey": "engagement-confidence"
+    },
+    {
+      "id": "engagement-discipline-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-discipline-orange",
+      "rawPath": "art/local/engagement-discipline-white.png",
+      "path": "public/art/archetypes/engagement-discipline/white.webp",
+      "helmet": "white",
+      "archetypeKey": "engagement-discipline"
+    },
+    {
+      "id": "engagement-discipline-blue",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-discipline-orange",
+      "rawPath": "art/local/engagement-discipline-blue.png",
+      "path": "public/art/archetypes/engagement-discipline/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "engagement-discipline"
+    },
+    {
+      "id": "engagement-discipline-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-discipline-orange",
+      "rawPath": "art/local/engagement-discipline-yellow.png",
+      "path": "public/art/archetypes/engagement-discipline/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "engagement-discipline"
+    },
+    {
+      "id": "engagement-discipline-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-discipline-orange",
+      "rawPath": "art/local/engagement-discipline-red.png",
+      "path": "public/art/archetypes/engagement-discipline/red.webp",
+      "helmet": "red",
+      "archetypeKey": "engagement-discipline"
+    },
+    {
+      "id": "engagement-discipline-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "engagement-discipline-orange",
+      "rawPath": "art/local/engagement-discipline-green.png",
+      "path": "public/art/archetypes/engagement-discipline/green.webp",
+      "helmet": "green",
+      "archetypeKey": "engagement-discipline"
+    },
+    {
+      "id": "mystery-white",
+      "type": "mystery",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to opaque light grey-white (#ECEFF3) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "mystery-orange",
+      "rawPath": "art/local/mystery-white.png",
+      "path": "public/art/hero/mystery-white.webp",
+      "helmet": "white"
+    },
+    {
+      "id": "mystery-blue",
+      "type": "mystery",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to medium blue (#1668B8) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "mystery-orange",
+      "rawPath": "art/local/mystery-blue.png",
+      "path": "public/art/hero/mystery-blue.webp",
+      "helmet": "blue"
+    },
+    {
+      "id": "mystery-yellow",
+      "type": "mystery",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to sunny yellow (#F2C230) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "mystery-orange",
+      "rawPath": "art/local/mystery-yellow.png",
+      "path": "public/art/hero/mystery-yellow.webp",
+      "helmet": "yellow"
+    },
+    {
+      "id": "mystery-red",
+      "type": "mystery",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to signal red (#D94A3A) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "mystery-orange",
+      "rawPath": "art/local/mystery-red.png",
+      "path": "public/art/hero/mystery-red.webp",
+      "helmet": "red"
+    },
+    {
+      "id": "mystery-green",
+      "type": "mystery",
+      "stage": "recolor",
+      "promptParts": [
+        "Change ONLY the color of the hard hat to green (#2E9E5B) keeping the same white highlight stripe. Keep absolutely everything else identical: same character, pose, proportions, vest, props, colors, badge, framing and transparent background. No shadow, no ground."
+      ],
+      "base": "mystery-orange",
+      "rawPath": "art/local/mystery-green.png",
+      "path": "public/art/hero/mystery-green.webp",
+      "helmet": "green"
+    },
+    {
+      "id": "universal-blue-base",
+      "type": "archetype",
+      "stage": "base",
+      "promptParts": [
+        "Match the rendering of the attached reference exactly: simple flat vector shapes with only soft two-tone linear gradients, no texture, no fur strands, no realistic lighting, no outlines, minimal detail, cute sticker-like mascot. Chibi proportions: head about 45% of the body height, small body, short legs. Large glossy hard hat with one white highlight stripe and a small white round badge with dark blue letters BI. Big dark round eyes with white highlights, pink blush ovals on cheeks, tiny smiling mouth. Yellow high-visibility vest with two white reflective stripes and a zipper, brown belt with a square buckle, dark navy trousers, brown boots. The hard hat and the badge are fully opaque solid colors, never transparent or see-through. Centered full-body character, standing, facing the viewer, transparent background, absolutely no shadow and no ground under the feet, no other text.",
+        "Character: the same fox as in the reference image — orange fur, white muzzle, pointed ears poking out from under the hard hat — waving with one hand raised in an orange glove, friendly smile. No cape, no props.",
+        "Hard hat color: medium blue (#1668B8), exactly like the hard hat of the reference fox."
+      ],
+      "base": null,
+      "rawPath": "art/raw/universal-blue-base.png",
+      "path": "public/art/archetypes/universal/blue.webp",
+      "helmet": "blue",
+      "archetypeKey": "universal"
+    },
+    {
+      "id": "universal-orange",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [],
+      "base": "universal-blue-base",
+      "rawPath": "art/local/universal-orange.png",
+      "path": "public/art/archetypes/universal/orange.webp",
+      "helmet": "orange",
+      "archetypeKey": "universal"
+    },
+    {
+      "id": "universal-white",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [],
+      "base": "universal-blue-base",
+      "rawPath": "art/local/universal-white.png",
+      "path": "public/art/archetypes/universal/white.webp",
+      "helmet": "white",
+      "archetypeKey": "universal"
+    },
+    {
+      "id": "universal-yellow",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [],
+      "base": "universal-blue-base",
+      "rawPath": "art/local/universal-yellow.png",
+      "path": "public/art/archetypes/universal/yellow.webp",
+      "helmet": "yellow",
+      "archetypeKey": "universal"
+    },
+    {
+      "id": "universal-red",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [],
+      "base": "universal-blue-base",
+      "rawPath": "art/local/universal-red.png",
+      "path": "public/art/archetypes/universal/red.webp",
+      "helmet": "red",
+      "archetypeKey": "universal"
+    },
+    {
+      "id": "universal-green",
+      "type": "archetype",
+      "stage": "recolor",
+      "promptParts": [],
+      "base": "universal-blue-base",
+      "rawPath": "art/local/universal-green.png",
+      "path": "public/art/archetypes/universal/green.webp",
+      "helmet": "green",
+      "archetypeKey": "universal"
+    }
+  ],
+  "recolorMode": "local-reference-v2"
+}

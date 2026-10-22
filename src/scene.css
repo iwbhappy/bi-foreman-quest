@@ -1,0 +1,2036 @@
+﻿.quest-play {
+  max-width: 1600px;
+  padding: 0;
+}
+.quest-layout {
+  display: flex;
+  flex-direction: column;
+}
+.quest-controls {
+  min-width: 0;
+  padding: 24px 20px 40px;
+}
+.quest-controls .quest-story {
+  padding: 24px;
+}
+.quest-stage {
+  position: relative;
+  height: 210px;
+  overflow: hidden;
+  background: #cfe3ee;
+  isolation: isolate;
+}
+.stage-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.quest-stage .quest-hud {
+  position: absolute;
+  z-index: 3;
+  top: 14px;
+  left: 14px;
+  right: 14px;
+  padding: 10px 12px;
+  background: #fffffff0;
+  border-radius: 14px;
+  box-shadow: 0 6px 24px #0b3b6f15;
+}
+.quest-stage .hud-track {
+  background: #e5ecf1;
+}
+.quest-stage .hud-time {
+  font-size: 18px;
+}
+.quest-stage .hud-indicators {
+  gap: 8px;
+}
+.stage-location-label,
+.stage-floor-label {
+  position: absolute;
+  z-index: 2;
+  bottom: 14px;
+  background: #ffffffdd;
+  color: #0b3b6f;
+  padding: 6px 10px;
+  border-radius: 7px;
+  font-size: 13px;
+}
+.stage-location-label {
+  left: 14px;
+}
+.stage-floor-label {
+  right: 14px;
+}
+.stage-speech {
+  display: none;
+}
+.quest-controls .quest-scene-heading {
+  margin-bottom: 18px;
+}
+.stage-actor .hero-silhouette {
+  width: 240px;
+  height: 340px;
+}
+.hero-preview-actor {
+  animation: actor-breathe 3s ease-in-out infinite;
+}
+.skin-designer {
+  display: grid;
+  gap: 20px;
+}
+.skin-group {
+  min-width: 0;
+}
+.skin-group legend {
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.skin-group > div {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.skin-group label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+  border: 1.5px solid #dce5ee;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #526a80;
+  min-width: 42px;
+}
+.skin-group input {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  cursor: pointer;
+}
+.skin-group label.active {
+  border-color: #1668b8;
+  background: #eaf2fa;
+  color: #0b3b6f;
+  box-shadow: 0 0 0 1px #1668b8;
+}
+.skin-group label:has(input:focus-visible) {
+  outline: 3px solid #f28c28;
+  outline-offset: 3px;
+}
+.skin-group svg {
+  width: 27px;
+  height: 27px;
+}
+.skin-helmet label,
+.skin-vest label {
+  padding: 4px;
+  border-radius: 50%;
+}
+.skin-vest label {
+  border-radius: 8px;
+}
+.skin-swatch {
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #0b3b6f;
+  font-size: 17px;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 1px #0b3b6f20;
+}
+.skin-vest .skin-swatch {
+  border-radius: 4px;
+  background-image: repeating-linear-gradient(90deg, transparent 0 2px, #ffffff16 2px 3px);
+}
+.skin-sticker {
+  font-size: 21px;
+  font-weight: 800;
+  line-height: 1;
+}
+.skin-theme label {
+  flex: 1;
+  min-width: 66px;
+  padding: 6px;
+}
+.skin-theme-preview {
+  width: 100%;
+  height: 25px;
+  border-radius: 5px;
+  background: linear-gradient(#7ec5f0, #f3cda1);
+}
+.preview-strict {
+  background: linear-gradient(#8698ac, #dce1e6);
+}
+.preview-calm {
+  background: linear-gradient(#acced1, #e2ecd9);
+}
+.preview-tech {
+  background: linear-gradient(#071e38, #1e536b);
+}
+.skin-glasses {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.skin-glasses input {
+  width: 20px;
+  height: 20px;
+  accent-color: #1668b8;
+}
+.skin-random {
+  width: 100%;
+  justify-content: center;
+}
+.hero-helmet {
+  animation: helmet-pop 0.3s ease-out;
+  transform-box: view-box;
+}
+.hero-vest {
+  animation: vest-shine 0.35s ease-out;
+}
+.hero-held-item {
+  animation: item-appear 0.3s ease-out;
+}
+@keyframes helmet-pop {
+  50% {
+    opacity: 0.65;
+    transform: translateY(-6px);
+  }
+}
+@keyframes vest-shine {
+  50% {
+    opacity: 0.55;
+  }
+}
+@keyframes item-appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes actor-breathe {
+  50% {
+    transform: scale(1.015);
+  }
+}
+@media (min-width: 1100px) {
+  .quest-start .hero-preview {
+    position: sticky;
+    top: 110px;
+    align-self: start;
+    min-height: 650px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-preview-actor,
+  .hero-helmet,
+  .hero-vest,
+  .hero-held-item {
+    animation: none !important;
+  }
+}
+.quest-text-status {
+  font-size: 13px;
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 14px;
+}
+.stage-skip-hint {
+  position: absolute;
+  bottom: 50px;
+  right: 16px;
+  z-index: 4;
+  font-size: 13px;
+  padding: 4px 8px;
+  color: #0b3b6f;
+  background: #ffffffcc;
+  border-radius: 5px;
+}
+.stage-text-events {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #64748b;
+  margin-top: 16px;
+}
+.quest-choice.selected {
+  border: 3px solid #1668b8;
+  border-left-width: 6px;
+  box-shadow: 0 8px 18px #1668b821;
+  transform: translateY(-2px);
+}
+.quest-choice {
+  position: relative;
+}
+.quest-choice.locked:not(.selected) {
+  opacity: 0.45;
+}
+.quest-choice.locked.selected {
+  padding-bottom: 48px;
+}
+.decision-stamp {
+  position: absolute;
+  bottom: 10px;
+  right: 14px;
+  border: 2px solid #1668b8;
+  color: #1668b8;
+  padding: 3px 6px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  transform: rotate(-8deg);
+  animation: decision-stamp 0.25s ease-out;
+}
+.decision-ready {
+  position: relative;
+  isolation: isolate;
+}
+.decision-ready::before {
+  content: '';
+  position: absolute;
+  inset: -5px;
+  background: #f28c2840;
+  border-radius: 12px;
+  z-index: -1;
+  animation: decision-glow 2s ease-in-out infinite;
+}
+.consequence-card {
+  border-left: 5px solid #1668b8;
+  animation: consequence-enter 0.4s ease-out;
+}
+.consequence-card.outcome-positive {
+  border-left-color: #2e9e5b;
+}
+.consequence-card.outcome-negative {
+  border-left-color: #d94a3a;
+}
+.consequence-deltas > span {
+  font-size: 16px;
+  font-weight: 700;
+}
+.quest-callback {
+  border-left: 4px solid #f28c28;
+  animation: echo-glow 1.5s ease-out;
+}
+.quest-callback small {
+  display: block;
+  color: #9d5a16;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.quest-alert {
+  background: #fce8e5;
+  color: #b6372b;
+  border-left: 4px solid #d94a3a;
+  animation: alert-pulse 1s ease-in-out 2;
+  font-weight: 700;
+}
+.quest-alert-original {
+  color: #99483a;
+  font-size: 13px;
+  margin-bottom: 18px;
+}
+.mentor-statement {
+  padding: 24px 18px;
+  border: 1px solid #d5e2ef;
+  border-radius: 16px;
+  background: #f0f6fc;
+  position: relative;
+  font-size: 24px;
+  line-height: 1.45;
+}
+.mentor-pause .likert-circle {
+  transform: scale(1.15);
+}
+.mentor-pause input:checked + .likert-circle {
+  animation: circle-bounce 0.3s ease-out;
+}
+.journal-time::before {
+  content: '';
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-right: 8px;
+  background: #1668b8;
+}
+.journal-outcome-positive .journal-time::before {
+  background: #2e9e5b;
+}
+.journal-outcome-negative .journal-time::before {
+  background: #d94a3a;
+}
+.shift-epilogue {
+  padding: 28px;
+  border: 1px solid #d5e2ef;
+  border-radius: 16px;
+  background: #f0f6fc;
+}
+.report-stage .quest-stage {
+  position: relative;
+  top: auto;
+  height: 340px;
+  border-radius: 20px;
+  margin-bottom: 28px;
+}
+.profile-highlights {
+  padding: 24px;
+  margin: 24px 0;
+}
+.profile-highlights > div {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+.profile-highlights p {
+  padding: 13px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  line-height: 1.65;
+}
+.highlight-strength {
+  background: #eaf5ee;
+  color: #207646;
+}
+.highlight-growth {
+  background: #fff1e5;
+  color: #9a5a1a;
+}
+.highlight-first {
+  background: #eaf2fa;
+  color: #0b3b6f;
+}
+.trait-fill {
+  animation: trait-grow 1s ease-out;
+}
+.strength-card {
+  box-shadow: 0 7px 22px #2e9e5b12;
+}
+.growth-card {
+  box-shadow: 0 7px 22px #f28c2815;
+}
+.main-change {
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #eaf2fa;
+  color: #0b3b6f;
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.main-change.trend-down {
+  background: #fcebe6;
+}
+.main-change.trend-up strong {
+  color: #25804a;
+}
+.main-change.trend-down strong {
+  color: #b44330;
+}
+.manager-next-step {
+  animation: next-step-pulse 0.75s 2;
+}
+.quest-stage .hud-time {
+  animation: clock-flip 0.6s ease-out;
+}
+.quest-stage .hud-track > span {
+  transition: transform 0.6s ease-out;
+}
+.hud-indicator {
+  border-radius: 5px;
+}
+.hud-indicator.indicator-danger {
+  color: #b4352a;
+}
+.hud-indicator.indicator-danger .hud-track > span {
+  background: #d94a3a;
+}
+.hud-indicator.indicator-danger::after {
+  content: '';
+  position: absolute;
+  inset: -2px;
+  border: 1px solid #d94a3a;
+  border-radius: 5px;
+  animation: indicator-danger 1.6s ease-in-out infinite;
+  pointer-events: none;
+}
+.hud-indicator {
+  position: relative;
+}
+.hud-indicator.indicator-excellent {
+  outline: 1px solid #d6ae3e;
+  outline-offset: 2px;
+}
+.hud-indicator > small {
+  font-size: 13px;
+  grid-column: 2/-1;
+  color: inherit;
+}
+.reveal-rays {
+  position: absolute;
+  width: 900px;
+  height: 900px;
+  top: -240px;
+  left: calc(50% - 450px);
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg 15deg,
+    #6ebdf23b 15deg 30deg,
+    transparent 30deg 45deg,
+    #f2c23020 45deg 60deg,
+    transparent 60deg 75deg,
+    #6ebdf23b 75deg 90deg,
+    transparent 90deg 105deg,
+    #f2c23020 105deg 120deg,
+    transparent 120deg 135deg,
+    #6ebdf23b 135deg 150deg,
+    transparent 150deg 180deg,
+    #f2c23020 180deg 195deg,
+    transparent 195deg 225deg,
+    #6ebdf23b 225deg 240deg,
+    transparent 240deg 270deg,
+    #f2c23020 270deg 285deg,
+    transparent 285deg 315deg,
+    #6ebdf23b 315deg 330deg,
+    transparent 330deg
+  );
+  opacity: 0;
+  pointer-events: none;
+}
+.reveal-phase-rays .reveal-rays {
+  opacity: 1;
+  animation: reveal-rays 1.2s linear;
+}
+.reveal-phase-rays .reveal-portrait {
+  animation: reveal-shake 0.12s 10;
+}
+.reveal-phase-waiting .hero-question {
+  animation: question-pulse 1s ease-in-out;
+}
+.reveal-phase-flash .reveal-flash {
+  animation: reveal-flash 0.3s ease-out;
+}
+.reveal-letter {
+  display: inline-block;
+  animation: reveal-letter 0.3s both;
+}
+.reveal-details {
+  animation: reveal-description 0.4s both;
+}
+.reveal-traits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 22px auto;
+  max-width: 720px;
+}
+.reveal-traits > p {
+  padding: 10px 13px;
+  border-radius: 9px;
+  background: #e1f3e7;
+  color: #1d7140;
+  font-size: 13px;
+  font-weight: 600;
+}
+.reveal-traits > p + p {
+  background: #fff0de;
+  color: #985412;
+}
+.hero-reveal {
+  min-height: 720px;
+}
+.hero-reveal .reveal-copy {
+  max-width: 740px;
+}
+.hero-reveal .reveal-description {
+  margin: 16px auto 0;
+}
+.reveal-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.reveal-particles i {
+  position: absolute;
+  width: 7px;
+  height: 11px;
+  border-radius: 2px;
+  animation: reveal-particle 1.5s both;
+}
+@keyframes decision-stamp {
+  from {
+    transform: rotate(-8deg) scale(1.4);
+    opacity: 0;
+  }
+}
+@keyframes decision-glow {
+  50% {
+    opacity: 0.25;
+    transform: scale(1.035);
+  }
+}
+@keyframes consequence-enter {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+}
+@keyframes echo-glow {
+  0%,
+  30% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes alert-pulse {
+  50% {
+    opacity: 0.55;
+  }
+}
+@keyframes circle-bounce {
+  50% {
+    transform: scale(1.25) translateY(-4px);
+  }
+}
+@keyframes trait-grow {
+  from {
+    transform: scaleX(0);
+  }
+}
+@keyframes next-step-pulse {
+  50% {
+    transform: scale(1.025);
+    opacity: 0.65;
+  }
+}
+@keyframes clock-flip {
+  from {
+    transform: translateY(-10px);
+    opacity: 0.3;
+  }
+}
+@keyframes indicator-danger {
+  50% {
+    opacity: 0.25;
+  }
+}
+@keyframes reveal-rays {
+  to {
+    transform: rotate(120deg);
+  }
+}
+@keyframes reveal-shake {
+  50% {
+    transform: translateX(3px) rotate(1deg);
+  }
+}
+@keyframes question-pulse {
+  50% {
+    opacity: 0.3;
+  }
+}
+@keyframes reveal-letter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+}
+@keyframes reveal-description {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+@keyframes reveal-particle {
+  from {
+    opacity: 0;
+    transform: translateY(-30px) rotate(0);
+  }
+  20% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(140px) rotate(180deg);
+  }
+}
+@media (min-width: 1100px) {
+  .profile-highlights > div {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-reveal *,
+  .trait-fill,
+  .manager-next-step {
+    animation: none !important;
+    transition: none !important;
+  }
+  .reveal-rays,
+  .reveal-particles {
+    display: none;
+  }
+  .reveal-letter,
+  .reveal-details {
+    opacity: 1;
+  }
+}
+@media print {
+  .trait-fill {
+    animation: none;
+  }
+  .skin-designer {
+    display: none;
+  }
+}
+.stage-cloud {
+  animation: cloud-drift 75s linear infinite alternate;
+}
+.cloud-1 {
+  animation-duration: 60s;
+}
+.cloud-2 {
+  animation-duration: 90s;
+}
+.stage-sky {
+  animation: sky-enter 0.8s ease-out;
+}
+.stage-orbit {
+  transition: transform 0.8s ease-in-out;
+}
+.stage-boom {
+  animation: crane-sway 8s ease-in-out infinite;
+  transform-origin: 669px 100px;
+}
+.stage-hook {
+  animation: hook-sway 5s ease-in-out infinite;
+  transform-origin: 540px 114px;
+}
+.stage-hook.lifting {
+  animation: hook-lift 1.2s ease-in-out;
+}
+.stage-new-floor {
+  animation: floor-lift 1.2s ease-in-out;
+}
+.stage-worker > circle,
+.stage-worker > path {
+  animation: worker-walk 20s linear infinite alternate;
+}
+.worker-1 > circle,
+.worker-1 > path {
+  animation-duration: 28s;
+}
+.worker-2 > circle,
+.worker-2 > path {
+  animation-duration: 35s;
+}
+.actor-idle {
+  animation: actor-breathe 3s ease-in-out infinite;
+  transform-origin: 120px 330px;
+}
+.npc-enter {
+  animation: npc-enter 0.6s ease-out;
+}
+.npc-departed {
+  opacity: 0;
+}
+.actor-gesture {
+  animation: hero-gesture 0.3s ease-out;
+  transform-origin: 120px 260px;
+}
+.stage-location {
+  animation: location-enter 0.6s ease-out;
+}
+.stage-thinking {
+  animation: thinking 2s ease-in-out infinite;
+}
+.stage-memory {
+  animation: memory-fade 2s both;
+}
+.stage-violation {
+  animation: violation 0.5s 2;
+}
+.stage-steam {
+  animation: steam 2s ease-out infinite;
+}
+.stage-lamp {
+  animation: lamp-on 0.5s both;
+}
+.npc-mood {
+  animation: mood-enter 0.4s ease-out;
+}
+.stage-event {
+  animation: event-enter 0.3s ease-out;
+}
+.event-pop,
+.event-cube,
+.event-anchor,
+.event-tablet-check {
+  animation: event-pop 0.8s ease-out both;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+.event-move,
+.event-arrive {
+  animation: event-arrive 1s ease-out both;
+}
+.event-leave,
+.event-truck-leave {
+  animation: event-leave 1s ease-in both;
+}
+.event-drum {
+  animation: drum-turn 1s ease-in-out;
+  transform-origin: 48px 26px;
+}
+.event-hammer {
+  animation: hammer-work 0.6s ease-in-out 2;
+  transform-origin: 62px 20px;
+}
+.event-sparks {
+  animation: spark 0.6s 2;
+}
+.event-progress {
+  transform-origin: left;
+  animation: progress-grow 1s ease-out;
+}
+.event-concrete {
+  transform-origin: top;
+  animation: concrete-pour 1s ease-out;
+}
+.event-slump {
+  transform-origin: bottom;
+  animation: slump 0.8s ease-out;
+}
+.event-samples {
+  animation: sample-send 1.2s ease-in-out;
+}
+.event-pen {
+  animation: pen-sign 1s ease-in-out;
+}
+.event-stamp {
+  animation: stamp 0.4s 0.5s both;
+  transform-origin: 105px 75px;
+}
+.event-unroll {
+  transform-origin: left;
+  animation: unroll 0.8s ease-out;
+}
+.event-mark {
+  animation: mark 0.3s 3;
+}
+.event-magnifier {
+  animation: magnify 1.1s ease-in-out;
+}
+.event-calendar {
+  transform-origin: top;
+  animation: calendar-flip 1s ease-in-out;
+}
+.event-phone {
+  animation: phone-ring 0.15s 6;
+}
+.event-signal {
+  animation: signal 1s ease-out;
+}
+.event-inspect-warning {
+  animation: inspect-warning 0.7s both;
+}
+.event-inspect-check {
+  animation: inspect-check 0.8s both;
+}
+.event-idea-copy {
+  animation: idea-send 1s ease-out both;
+}
+.copy-1 {
+  animation-delay: 0.1s;
+}
+.copy-2 {
+  animation-delay: 0.2s;
+}
+.event-bulb {
+  animation: bulb 1s ease-in-out;
+}
+.event-carabiner {
+  animation: carabiner 0.8s ease-in-out;
+}
+.event-shield {
+  animation: shield 1s ease-out;
+}
+.event-glitch {
+  animation: glitch 0.2s 4;
+}
+.event-spotlight {
+  transform-origin: top;
+  animation: spotlight 1s ease-out;
+}
+.event-cheer {
+  animation: cheer 0.8s ease-out;
+}
+.event-bubble {
+  animation: thinking 1s ease-in-out;
+}
+.stage-particle {
+  animation: cheer-particle 1.2s ease-out;
+}
+.delta-flying {
+  animation: delta-flight 0.6s ease-in both;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.stage-settled .stage-event * {
+  animation: none !important;
+}
+.event-final * {
+  animation: none !important;
+}
+.event-final .event-inspect-warning {
+  opacity: 0;
+}
+.event-final .event-inspect-check {
+  opacity: 1;
+}
+.quest-actions {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+@keyframes cloud-drift {
+  to {
+    transform: translateX(120px);
+  }
+}
+@keyframes sky-enter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes crane-sway {
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes hook-sway {
+  50% {
+    transform: rotate(4deg);
+  }
+}
+@keyframes hook-lift {
+  40% {
+    transform: translateY(140px);
+  }
+}
+@keyframes floor-lift {
+  from {
+    transform: translate(-70px, 170px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+@keyframes worker-walk {
+  to {
+    transform: translateX(100px);
+  }
+}
+@keyframes npc-enter {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+}
+@keyframes hero-gesture {
+  50% {
+    transform: rotate(-8deg) scale(1.025);
+  }
+}
+@keyframes location-enter {
+  from {
+    transform: translateX(80px);
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.event-final .event-truck-leave,
+.event-final .event-leave {
+  opacity: 0;
+  transform: translateX(150px);
+}
+.event-final .event-slump {
+  transform: scaleY(0.9);
+  transform-origin: bottom;
+}
+.stage-night-event {
+  animation: sky-enter 0.8s ease-out;
+}
+.mentor-pause .likert-choice > span {
+  transform: scale(1.15);
+}
+.mentor-pause .likert-choice.selected > span {
+  animation: circle-bounce 0.3s ease-out;
+}
+@keyframes thinking {
+  50% {
+    opacity: 0.2;
+  }
+}
+@keyframes memory-fade {
+  0%,
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes violation {
+  50% {
+    opacity: 0.08;
+  }
+}
+@keyframes steam {
+  to {
+    transform: translateY(-18px);
+    opacity: 0;
+  }
+}
+@keyframes lamp-on {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes mood-enter {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+}
+@keyframes event-enter {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes event-pop {
+  from {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes event-arrive {
+  from {
+    transform: translateX(140px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes event-leave {
+  to {
+    transform: translateX(150px);
+    opacity: 0;
+  }
+}
+@keyframes drum-turn {
+  50% {
+    transform: rotate(22deg);
+  }
+}
+@keyframes hammer-work {
+  50% {
+    transform: rotate(-25deg);
+  }
+}
+@keyframes spark {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes progress-grow {
+  from {
+    transform: scaleX(0.1);
+  }
+}
+@keyframes concrete-pour {
+  from {
+    transform: scaleY(0.1);
+    opacity: 0;
+  }
+}
+@keyframes slump {
+  from {
+    transform: scaleY(1.25);
+  }
+  to {
+    transform: scaleY(0.9);
+  }
+}
+@keyframes sample-send {
+  70% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(60px);
+  }
+}
+@keyframes pen-sign {
+  50% {
+    transform: translate(-15px, 12px);
+  }
+}
+@keyframes stamp {
+  from {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+@keyframes unroll {
+  from {
+    transform: scaleX(0.1);
+  }
+}
+@keyframes mark {
+  50% {
+    opacity: 0;
+  }
+}
+@keyframes magnify {
+  50% {
+    transform: translate(-30px, 20px);
+  }
+}
+@keyframes calendar-flip {
+  50% {
+    transform: scaleY(0.1);
+    opacity: 0.2;
+  }
+}
+@keyframes phone-ring {
+  50% {
+    transform: translateX(5px) rotate(3deg);
+  }
+}
+@keyframes signal {
+  from {
+    opacity: 0.2;
+    transform: scale(0.9);
+  }
+}
+@keyframes inspect-warning {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes inspect-check {
+  0%,
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes idea-send {
+  from {
+    transform: translate(0, -45px) scale(0.6);
+    opacity: 0;
+  }
+}
+@keyframes bulb {
+  50% {
+    opacity: 0.3;
+  }
+}
+@keyframes carabiner {
+  50% {
+    transform: translateX(30px);
+  }
+}
+@keyframes shield {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+@keyframes glitch {
+  50% {
+    transform: translateX(-4px);
+    opacity: 0.4;
+  }
+}
+@keyframes spotlight {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+}
+@keyframes cheer {
+  50% {
+    transform: translateY(-9px);
+  }
+}
+@keyframes cheer-particle {
+  to {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+}
+@keyframes delta-flight {
+  0% {
+    opacity: 0;
+    transform: translateY(90px) scale(0.8);
+  }
+  35% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--delta-x), var(--delta-y)) scale(0.3);
+    opacity: 0;
+  }
+}
+@media (max-width: 767px) {
+  .stage-particle,
+  .stage-speech {
+    display: none;
+  }
+  .quest-stage .hud-label {
+    display: inline;
+  }
+  .quest-stage .hud-indicator {
+    gap: 4px;
+  }
+  .quest-stage .hud-value {
+    font-size: 13px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .quest-stage *,
+  .quest-controls *,
+  .hero-preview *,
+  .skin-designer * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+  .stage-memory {
+    opacity: 0;
+  }
+  .event-inspect-warning {
+    opacity: 0;
+  }
+  .event-inspect-check {
+    opacity: 1;
+  }
+}
+@media (min-width: 768px) {
+  .quest-stage {
+    height: 320px;
+  }
+  .quest-controls {
+    padding: 32px;
+  }
+  .stage-speech {
+    display: block;
+  }
+}
+@media (min-width: 1100px) {
+  .quest-layout {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .quest-controls {
+    order: -1;
+    flex: 0 0 44%;
+    min-width: 440px;
+    max-width: 620px;
+    height: calc(100dvh - 80px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    padding: 26px 24px 48px;
+  }
+  .quest-stage {
+    flex: 1;
+    position: sticky;
+    top: 80px;
+    height: calc(100dvh - 80px);
+  }
+  .quest-controls .quest-story {
+    padding: 24px 20px;
+  }
+}
+.theme-strict .stage-particle {
+  display: none;
+}
+.theme-strict .stage-building {
+  stroke-width: 0.8px;
+}
+.theme-calm .actor-idle {
+  animation-duration: 3.9s;
+}
+.theme-calm .stage-boom {
+  animation-duration: 10.4s;
+}
+.theme-calm .stage-hook {
+  animation-duration: 6.5s;
+}
+.theme-calm .stage-cloud {
+  animation-duration: 97.5s;
+}
+.theme-calm .cloud-1 {
+  animation-duration: 78s;
+}
+.theme-calm .cloud-2 {
+  animation-duration: 117s;
+}
+.theme-calm .stage-event > * {
+  animation-duration: 1.3s;
+}
+.theme-tech .stage-event-label text,
+.theme-tech .stage-location-label,
+.theme-tech .stage-floor-label {
+  font-family: ui-monospace, monospace;
+}
+.theme-tech .stage-building {
+  filter: drop-shadow(0 0 2px #62d9ed55);
+}
+.quest-play[data-theme='strict'] .btn-primary,
+.quest-start[data-theme='strict'] .btn-primary {
+  background: #5d7289;
+  color: white;
+}
+.quest-play[data-theme='calm'] .btn-primary,
+.quest-start[data-theme='calm'] .btn-primary {
+  background: #70a994;
+  color: #062f25;
+}
+.quest-play[data-theme='tech'] .btn-primary,
+.quest-start[data-theme='tech'] .btn-primary {
+  background: #62d9ed;
+  color: #071e38;
+}
+.hero-raised-arm {
+  animation: arm-up 0.3s ease-out;
+  transform-origin: 63px 227px;
+}
+.reveal-word {
+  display: inline-block;
+  white-space: nowrap;
+}
+.number-print { display: none; }
+.quest-stage .hud-time { white-space: nowrap; min-width: 58px; flex-shrink: 0; }
+.stage-skip-hint { top: 100px; bottom: auto; }
+@media print { .number-screen { display: none; }.number-print { display: inline; } }
+@media (max-width: 767px) {
+  .quest-stage .hud-value {
+    display: inline-block;
+  }
+}
+.hud-clock-digit {
+  display: inline-block;
+  animation: clock-flip 0.6s ease-out both;
+}
+.quest-stage .hud-time {
+  animation: none;
+}
+.stage-memory {
+  filter: sepia(1);
+}
+.event-alert .event-mark {
+  stroke: #d94a3a;
+}
+.event-alert .stage-event-label text {
+  fill: #d94a3a;
+  animation: mark 0.3s 3;
+}
+.event-truck-leave {
+  animation: truck-turn-leave 1s ease-in both;
+  transform-origin: 75px 40px;
+}
+@keyframes truck-turn-leave {
+  0% {
+    transform: scaleX(1);
+  }
+  35% {
+    transform: scaleX(-1);
+  }
+  100% {
+    transform: translateX(-150px) scaleX(-1);
+    opacity: 0;
+  }
+}
+@media (min-width: 1100px) {
+  .app-shell:has(.quest-play) > .site-footer {
+    display: none;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1279px) {
+  .quest-stage .quest-hud {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 6px;
+  }
+  .quest-stage .hud-scene {
+    justify-self: end;
+  }
+  .quest-stage .hud-indicators {
+    grid-column: 1/-1;
+    width: 100%;
+  }
+  .quest-stage .hud-track {
+    min-width: 12px;
+  }
+}
+.vest-glint {
+  animation: vest-glint 0.45s ease-out;
+}
+.quest-stage:has(.stage-violation)::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background: radial-gradient(ellipse at center, transparent 45%, #d94a3a77 100%);
+  animation: violation-vignette 0.5s 2 both;
+}
+@keyframes vest-glint {
+  0% {
+    opacity: 0;
+    transform: translateX(-5px);
+  }
+  45% {
+    opacity: 0.45;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+}
+@keyframes violation-vignette {
+  0%,
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .vest-glint {
+    animation: none !important;
+  }
+  .quest-stage:has(.stage-violation)::after {
+    animation: none;
+    opacity: 0.35;
+  }
+}
+@media (max-width: 767px) {
+  .quest-stage .quest-hud {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 6px 8px;
+    top: 8px;
+    left: 10px;
+    right: 10px;
+    padding: 7px 10px;
+  }
+  .quest-stage .hud-scene {
+    justify-self: end;
+  }
+  .quest-stage .hud-indicators {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px 12px;
+    width: 100%;
+  }
+  .quest-stage .hud-indicator {
+    display: grid;
+    grid-template-columns: 12px 65px 1fr 18px;
+    min-width: 0;
+    gap: 3px;
+    font-size: 13px;
+  }
+  .quest-stage .hud-label {
+    font-size: 13px;
+  }
+  .quest-stage .indicator-emoji {
+    font-size: 13px;
+  }
+  .quest-stage .hud-track {
+    min-width: 0;
+    width: 100%;
+  }
+  .quest-stage .hud-value {
+    font-size: 13px;
+  }
+  .quest-stage .hud-indicator > small {
+    display: block;
+    font-size: 13px;
+  }
+  .stage-floor-label {
+    font-size: 13px;
+    max-width: 55%;
+  }
+  .mentor-pause .likert-choice > span {
+    transform: scale(1.15);
+  }
+  .mentor-pause .likert-choice.selected > span {
+    animation: circle-bounce 0.3s ease-out;
+  }
+}
+@keyframes arm-up {
+  from {
+    transform: rotate(55deg);
+  }
+}
+
+/* ==========================================================================
+   Сцена квеста: исправленные анимации.
+   Правило: любое масштабирование/поворот внутри сцены считаем от самого объекта
+   (transform-box: fill-box), а CSS-анимации вешаем только на группы без атрибута
+   transform — иначе анимация затирает позицию элемента.
+   ========================================================================== */
+.quest-stage .stage-svg {
+  overflow: hidden;
+}
+.actor-idle {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: actor-breathe 3s ease-in-out infinite;
+}
+.actor-gesture {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: hero-gesture 0.35s ease-out;
+}
+.hero-raised-arm {
+  transform-box: fill-box;
+  transform-origin: 100% 100%;
+}
+.npc-enter.npc-leaving {
+  animation: npc-walk-off 1s ease-in forwards;
+}
+.npc-enter.npc-departed {
+  animation: none;
+  opacity: 0;
+}
+@keyframes npc-walk-off {
+  20% {
+    transform: translateX(-12px);
+  }
+  100% {
+    transform: translateX(520px);
+    opacity: 0;
+  }
+}
+.npc-mood {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: mood-pop 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.4) both;
+}
+@keyframes mood-pop {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.5);
+  }
+}
+.stage-settled .npc-mood {
+  animation: none;
+}
+.stage-speech {
+  animation: speech-in 0.35s ease-out both;
+}
+@keyframes speech-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+/* Кран и новый этаж: крюк опускает этаж на здание и поднимается обратно. */
+.stage-boom {
+  transform-origin: 784px 92px;
+  animation: crane-sway 9s ease-in-out infinite;
+}
+@keyframes crane-sway {
+  25% {
+    transform: rotate(1deg);
+  }
+  75% {
+    transform: rotate(-1deg);
+  }
+}
+.stage-hook {
+  animation: hook-idle 5s ease-in-out infinite;
+}
+.stage-hook.lifting {
+  animation: hook-lower 1.6s ease-in-out both;
+}
+@keyframes hook-idle {
+  50% {
+    transform: translateX(2px);
+  }
+}
+@keyframes hook-lower {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(var(--hook-from));
+  }
+  62%,
+  72% {
+    transform: translateY(var(--hook-to));
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.stage-new-floor {
+  animation: floor-lower 1.6s ease-in-out both;
+}
+@keyframes floor-lower {
+  0% {
+    opacity: 0;
+    transform: translateY(-80px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-80px);
+  }
+  62%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.floor-sling {
+  animation: sling-off 1.6s ease-in-out both;
+}
+@keyframes sling-off {
+  0%,
+  66% {
+    opacity: 1;
+  }
+  80%,
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Миксер на въезде уезжает сам. */
+.motif-vehicle-leaving {
+  animation: vehicle-leave 1.05s ease-in forwards;
+}
+.motif-vehicle-gone {
+  opacity: 0;
+}
+@keyframes vehicle-leave {
+  15% {
+    transform: translateX(8px);
+  }
+  100% {
+    transform: translateX(-280px);
+    opacity: 0;
+  }
+}
+
+/* События: появление и точки вращения от самого объекта. */
+.stage-event-position * {
+  transform-box: fill-box;
+}
+.stage-event {
+  animation: event-enter 0.3s ease-out both;
+}
+@keyframes event-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+.event-pop,
+.event-cube,
+.event-anchor,
+.event-tablet-check,
+.event-stamp,
+.event-shield,
+.event-signal,
+.event-phone,
+.event-drum,
+.event-bulb,
+.event-dust {
+  transform-origin: center;
+}
+.event-hammer {
+  transform-origin: 0% 100%;
+  animation: hammer-work 0.45s ease-in-out 3;
+}
+@keyframes hammer-work {
+  50% {
+    transform: rotate(-28deg);
+  }
+}
+.event-progress,
+.event-unroll {
+  transform-origin: 0% 50%;
+}
+.event-slump,
+.event-fill {
+  transform-origin: 50% 100%;
+}
+.event-calendar,
+.event-spotlight {
+  transform-origin: 50% 0%;
+}
+.event-fill {
+  animation: fill-rise 1s ease-out both;
+}
+@keyframes fill-rise {
+  from {
+    transform: scaleY(0.05);
+  }
+}
+.event-stream {
+  stroke-dasharray: 6 4;
+  animation: stream-flow 0.3s linear infinite;
+}
+@keyframes stream-flow {
+  to {
+    stroke-dashoffset: -10;
+  }
+}
+.event-clock-hand {
+  transform-origin: 50% 100%;
+  animation: clock-spin 1.1s linear infinite;
+}
+@keyframes clock-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.event-zz {
+  animation: zz-float 1.3s ease-out infinite;
+}
+.event-zz.zz-2 {
+  animation-delay: 0.45s;
+}
+@keyframes zz-float {
+  from {
+    opacity: 0;
+    transform: translate(0, 8px);
+  }
+  40% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate(10px, -14px);
+  }
+}
+.event-move {
+  animation: crew-walk 1.1s ease-in-out both;
+}
+@keyframes crew-walk {
+  from {
+    transform: translateX(-30px);
+  }
+  to {
+    transform: translateX(30px);
+  }
+}
+.event-dust {
+  animation: dust 0.9s ease-out both;
+}
+@keyframes dust {
+  from {
+    opacity: 0.9;
+    transform: scale(0.4);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.4) translateX(20px);
+  }
+}
+.event-final .event-dust {
+  opacity: 0;
+}
+.event-cheer {
+  animation: cheer 0.5s ease-out 2;
+}
+.stage-particle {
+  transform-box: fill-box;
+  animation: cheer-particle 1s ease-out both;
+}
+
+/* Пилюли изменений показателей: всплывают над зоной события и летят точно в свою шкалу HUD. */
+.stage-pills {
+  position: absolute;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  transform: translate(-50%, -100%);
+  pointer-events: none;
+}
+.stage-pill {
+  --dx: 0px;
+  --dy: -120px;
+  padding: 7px 14px;
+  border: 2px solid;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1;
+  white-space: nowrap;
+  box-shadow: 0 6px 18px #0b3b6f22;
+  animation:
+    pill-in 0.32s cubic-bezier(0.2, 0.9, 0.3, 1.35) calc(var(--i) * 110ms) both,
+    pill-fly 0.55s ease-in calc(620ms + var(--i) * 110ms) forwards;
+}
+.pill-up {
+  color: #257b46;
+  background: #e2f3e8;
+  border-color: #2e9e5b;
+}
+.pill-down {
+  color: #b23f30;
+  background: #fce8e1;
+  border-color: #d94a3a;
+}
+@keyframes pill-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.7);
+  }
+}
+@keyframes pill-fly {
+  to {
+    opacity: 0;
+    transform: translate(var(--dx), var(--dy)) scale(0.35);
+  }
+}
+.hud-bump .hud-track {
+  animation: hud-bump 0.5s ease-out;
+}
+.hud-bump {
+  animation: hud-glow 0.7s ease-out;
+  border-radius: 8px;
+}
+@keyframes hud-bump {
+  40% {
+    transform: scaleY(2.2);
+  }
+}
+@keyframes hud-glow {
+  30% {
+    background: #fff4d6;
+    box-shadow: 0 0 0 4px #f28c2833;
+  }
+}
+@media (max-width: 767px) {
+  .stage-pill {
+    padding: 4px 9px;
+    font-size: 13px;
+  }
+  .stage-event-label,
+  .stage-memory,
+  .stage-thinking {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stage-pills {
+    display: none;
+  }
+  .motif-vehicle-leaving {
+    opacity: 0;
+  }
+}
+
+/* Врезка события в небе над героями. */
+.stage-event-panel {
+  filter: drop-shadow(0 10px 24px #0b3b6f2e);
+  transform-box: fill-box;
+  transform-origin: 30% 100%;
+  animation: panel-in 0.35s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+.stage-settled .stage-event-panel {
+  animation: none;
+}
+@keyframes panel-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.92);
+  }
+}
+.stage-event-caption {
+  animation: caption-in 0.3s ease-out both;
+}
+@keyframes caption-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+}
+.theme-tech .stage-event-panel > rect,
+.theme-tech .stage-event-panel > path:first-of-type {
+  fill: #0f2c46;
+}
+.theme-tech .stage-event-caption {
+  fill: #9fe8f5;
+  font-family: ui-monospace, monospace;
+}
+@media (max-width: 767px) {
+  .stage-event-caption {
+    display: none;
+  }
+}
+
+/* Подписи сцены — под HUD (top задаётся из QuestStage), подсказка пропуска — внизу по центру. */
+.stage-location-label,
+.stage-floor-label {
+  bottom: auto;
+}
+.stage-skip-hint {
+  top: auto;
+  bottom: 14px;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+}
+@media (min-width: 768px) and (max-width: 1099px) {
+  .quest-stage {
+    height: 440px;
+  }
+}
+/* Телефон: сцена выше, HUD в одну строку без подписей. */
+@media (max-width: 767px) {
+  .quest-stage {
+    height: 300px;
+  }
+  .quest-stage .quest-hud {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    padding: 6px 10px;
+  }
+  .quest-stage .hud-time {
+    min-width: 44px;
+    font-size: 15px;
+  }
+  .quest-stage .hud-scene {
+    display: none;
+  }
+  .quest-stage .hud-indicators {
+    display: flex;
+    flex: 1;
+    gap: 8px;
+    width: auto;
+  }
+  .quest-stage .hud-indicator {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    gap: 3px;
+    min-width: 0;
+  }
+  .quest-stage .hud-label,
+  .quest-stage .hud-indicator > small {
+    display: none;
+  }
+  .quest-stage .hud-track {
+    flex: 1;
+    min-width: 0;
+  }
+  .quest-stage .hud-value {
+    font-size: 13px;
+  }
+  .stage-location-label,
+  .stage-floor-label,
+  .stage-skip-hint {
+    display: none;
+  }
+}
+
+
+/* HUD сцены постоянной высоты (≥768 px): иконка · подпись · число в строке, полоска под ними.
+   Подпись «под угрозой/отлично» не меняет высоту — состояние видно по рамке и цвету, текст есть в левой панели. */
+@media (min-width: 768px) {
+  .quest-stage .quest-hud {
+    display: grid;
+    grid-template-columns: auto auto 1fr;
+    align-items: center;
+    gap: 6px 12px;
+  }
+  .quest-stage .hud-indicators {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+    width: 100%;
+  }
+  .quest-stage .hud-indicator {
+    display: grid;
+    grid-template-columns: 18px minmax(0, 1fr) auto;
+    grid-template-areas: 'icon label value' 'track track track';
+    align-items: center;
+    gap: 4px 6px;
+    min-width: 0;
+    padding: 2px 4px;
+  }
+  .quest-stage .hud-indicator .indicator-emoji { grid-area: icon; }
+  .quest-stage .hud-indicator .hud-label {
+    grid-area: label;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .quest-stage .hud-indicator .hud-value { grid-area: value; font-weight: 700; }
+  .quest-stage .hud-indicator .hud-track { grid-area: track; min-width: 0; width: 100%; }
+  .quest-stage .hud-indicator > small { display: none; }
+}
+
+/* Icon size moved from redesign.css; scene HUD styles live here. */
+.hud-indicator .icon{width:16px;height:16px}

@@ -1,0 +1,54 @@
+{
+  "name": "bi-academy-profile",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "npm run build:api && tsc -b && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "vitest run",
+    "lint": "eslint .",
+    "test:browser": "node scripts/browser-check.mjs",
+    "test:quest-browser": "node scripts/quest-browser-check.mjs",
+    "test:dashboard-browser": "node scripts/dashboard-browser-check.mjs",
+    "test:polish-browser": "node scripts/polish-browser-check.mjs",
+    "test:scene-browser": "node scripts/scene-browser-check.mjs",
+    "record:scene": "node scripts/record-scene.mjs",
+    "test:ai-browser": "node scripts/ai/browser-check.mjs",
+    "ai:demo": "node scripts/ai/demo-analyses.mjs",
+    "check:dist": "node scripts/ai/check-dist.mjs",
+    "build:api": "node scripts/build-api.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "1.59.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "^7.18.4",
+    "recharts": "^3.10.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.5",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "22.15.3",
+    "@types/react": "18.3.20",
+    "@types/react-dom": "18.3.6",
+    "@vitejs/plugin-react": "4.4.1",
+    "autoprefixer": "10.4.21",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "globals": "16.0.0",
+    "playwright": "^1.64.1",
+    "postcss": "^8.5.31",
+    "qrcode": "1.5.4",
+    "sharp": "0.35.5",
+    "tailwindcss": "^4.3.3",
+    "typescript": "5.8.3",
+    "typescript-eslint": "^8.71.2",
+    "vite": "^6.4.4",
+    "vitest": "^5.0.5"
+  },
+  "engines": {
+    "node": "22.x"
+  }
+}
